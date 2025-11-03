@@ -1,0 +1,304 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html, body {
+  overflow-x: hidden;
+}
+body
+{
+    overflow-x: hidden;
+    /* background: rgba(0,0,0,0.9); */
+
+}
+
+video 
+{
+    position: fixed;
+     top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: contain;
+      z-index: -1; 
+      
+    }
+
+
+:root
+{
+    --color1:#1f1f1f;
+    --color2:#27e288;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+ .circle {
+      width: 150px;
+      height: 150px;
+      background: red;
+      border-radius: 50%;
+      animation: spin 5s linear infinite;
+    }
+    
+    @keyframes spin {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+
+
+/* section 1 starts here */
+
+
+/* this is sidebar in first section */
+.s1d1
+{
+    height: 600px;
+    
+   
+    border-radius: 25px;
+}
+.me
+{
+    border-radius: 25px;
+}
+
+
+/* menu in section */
+.btn
+{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+/* hamburger in mobile and tab */
+
+.ham
+{
+    top:0;
+    right: 20px;
+    height: auto;
+    
+}
+
+.s2d1
+{
+    margin-top: 80px;
+}
+.intro-p
+{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.anim
+{
+    height: 200px;
+    width: 200px;
+}
+    .rbox
+    {
+        width: 95%;
+        border-radius: 20px;
+    }
+
+    .s2d5
+    {
+        margin-top: 100px;
+    }
+
+    .s2d6
+    {
+        margin-top: 100px;
+    }
+    .skill
+    {
+        width: 40%;
+    }
+
+   
+
+
+.gap-2 button.border {
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.gap-2 button.border:hover {
+    border-color: green !important; 
+    transform: scale(1.1);
+}
+
+.button-contact {
+    background-color: var(--color2);  
+    color: white;            
+    border: 2px solid --color2;  
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-contact:hover {
+    background-color: transparent; 
+    color: var(--color2);  
+}
+.skill {
+  border: 2px solid #dee2e6 !important; /* ensure default border */
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.skill:hover {
+  border-color: #28a745 !important; /* override Bootstrap border */
+  transform: translateY(-5px);
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+a div img {
+  transition: transform 0.3s, filter 0.3s;
+  filter: grayscale(100%) brightness(1); /* optional: make icons gray by default */
+}
+
+a div img:hover {
+  
+  filter: brightness(0) saturate(100%) invert(48%) sepia(90%) saturate(500%) hue-rotate(80deg) brightness(0.9); 
+  cursor: pointer;
+}
+
+.rbox {
+  border: 2px solid #dee2e6 !important; /* override Bootstrap border */
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+}
+
+.rbox:hover {
+  border-color: #28a745 !important; /* force green border */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.ham2
+{
+    position: fixed;
+    top: -100px;
+     right: 30px;
+}
+.pro1
+    {
+        height: 220px;
+        width: 100%;
+        border-radius: 20px;
+                margin-top: 20px;
+
+        
+    }
+
+
+ 
+
+
+@media(min-width:768px)
+{
+    .skill
+    {
+        width: 21%;
+    }
+    .pro1
+    {
+        height: 220px;
+        width: 353px;
+        border-radius: 20px;
+                margin-top: 30px;
+
+        
+    }
+    
+  
+
+}
+@media(min-width:992px)
+{
+
+    /* section 1 starts here */
+    .s1d1
+    {
+         width: 320px;
+    }
+
+    /* section 2 starts here */
+
+    .s2
+    {
+        margin-top: 100px;
+    }
+    .sidebar
+    {
+        line-height: 40px;
+        width: 60px;
+        height: auto;
+        border-radius: 50px;
+        position: fixed;
+        top: 200px;
+        z-index: -1;
+    }
+    .profile
+    {
+        position: fixed;
+    }
+    .s2d3
+    {
+        margin-top: 100px;
+    }
+    .s2d4
+    {
+        margin-top: 100px;
+    }
+    .line
+    {
+        line-height: 0.1px;
+    }
+  
+    .s2d5
+    {
+        margin-top: 100px;
+    }
+    .rbox
+    {
+        width: 90%;
+        border-radius: 20px;
+    }
+    .s2d6
+    {
+        margin-top: 100px;
+    }
+    .s2d7
+    {
+        margin-top: 70px;
+    }
+    .pro1
+    {
+        height: 280px;
+        width: 395px;
+        border-radius: 20px;
+        margin-top: 30px;
+    }
+         
+      
+    form
+    {
+        margin: 30px 50px;
+        width: 70%;
+    }
+    .ham2
+    {
+        display: none;
+    }
+   
+}
